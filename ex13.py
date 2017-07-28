@@ -1,5 +1,6 @@
 from sys import argv
 # this will read arguments from command line
+# read the WYSS Section fro how to run this
 
 script, first, second, third = argv
 
