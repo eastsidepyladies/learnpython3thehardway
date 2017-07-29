@@ -5,12 +5,10 @@ script, filename = argv
 print("Today we are creating haiku's")
 print(f"We will save it in the file {filename} you provided")
 
-
-
-file = open(filename)
-
+txt = open(filename)
 print("Currently your file contains the following: ")
-print(file.read())
+print(txt.read())
+txt.close()
 
 print(f"We're going to erase {filename}.")
 print("If you don't want that hit CTRL-C (^C).")
@@ -37,3 +35,15 @@ target.write("\n") #line break
 target.write(line2)
 target.write("\n") #line break
 target.write(line3)
+target.close()
+
+print("Would you like me to read your new file back?")
+print("hit CTRL-C (^C). to close this program")
+print("otherwise, hit RETURN.")
+input("?")
+
+print("Here is your new file")
+
+txt = open(filename)
+print(txt.read())
+txt.close()
