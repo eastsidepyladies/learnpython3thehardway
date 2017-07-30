@@ -21,6 +21,8 @@ You live in {lives}.
 And you have a {computer} computer.
 """)
 
+# Drill
+
 print(f"Nice to meet you, {user_name}.")
 print("Moving on, I just need to ask you a few quick questions in order to customize your rollercoaster ride. That is what you're here for, right?")
 
@@ -30,7 +32,7 @@ nervousness = input(prompt)
 print(f"Here are some headphones for you to wear, {user_name}. We can play music to pump you up or calm you down. What song would you like to hear?")
 song = input(prompt)
 
-print("What letter of the alphabet does your favorite rollercoaster track shape match? (Specify orientation if not upright.L)")
+print("What letter of the alphabet does your favorite rollercoaster track shape match? (Specify orientation if not upright.)")
 track = input(prompt)
 
 print(f"""
