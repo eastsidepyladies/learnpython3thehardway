@@ -1,7 +1,8 @@
 from sys import argv
 
 script, user_name = argv
-prompt = '> '
+# modified prompt
+prompt = '>>----> '
 
 # Reminder: The f preceding string stands for format
 print(f"Hi {user_name}. I'm the {script} script.")
@@ -38,4 +39,3 @@ track = input(prompt)
 print(f"""
 Woowee! {user_name}, you are in for a good time. Can you hear {song} in your ears yet? Good. Brace yourself for those {track}s! This ride will last {nervousness} minutes.
 """)
-
