@@ -12,7 +12,7 @@ print(txt.read())
 
 # this prompts user to supply sample text file again, unopenned
 print("Type the filename again:")
-file_again = input("What's the file called again? --> ")
+file_again = input("So... what's the file called again?")
 
 # takes input and gives it an opened status (not yet read)
 txt_again = open(file_again)
