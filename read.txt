@@ -1,0 +1,11 @@
+ close: Closes the file. Like File -> Save... in your editor
+ 
+ read: Reads the contents of the file. You can assign the results to a variable.
+ 
+ readline: Reads just one line of a text file.
+ 
+ truncate: Empties the file. Watch out if you care about this file.
+ 
+ write('stuff'): Writes "stuff" to the file.
+ 
+ seek(0): Moves the read/write location to the beginning of the file.
