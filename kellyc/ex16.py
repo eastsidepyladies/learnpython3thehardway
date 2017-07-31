@@ -2,7 +2,7 @@ from sys import argv
 
 script, filename = argv
 
-# these lines print instructions on how to abort or continue the script 
+# print instructions on how to abort or continue the script
 print(f"We're going to erase {filename}.")
 print("If you don't want to do that, hit CTRL-C (^C).")
 print("If you do want that, hit RETURN.")
@@ -35,4 +35,3 @@ target.write(line1 + "\n" + line2 + "\n" + line3 + "\n")
 
 print("And finally, we close it.")
 target.close()
-
