@@ -20,13 +20,14 @@ def print_line(line, encoding, errors):
 print("Testing encoding")
 #DBES Decode Bytes Encode Strings
 
-s = "አማርኛ"  # Amharic
-print(s.encode("utf-8", errors="strict"))  # This will be fine
-print(s.decode("utf-8", errors="strict"))
+# s = "አማርኛ"  # Amharic
+# text = s.encode("utf-8", errors="strict")
+# print(text)  # This will be fine
+# print(text.decode("utf-8", errors="strict"))
 # cp437 was used by DOS/Windows. Run "chcp" in your Windows command prompt to know your current code page.
 # print(s.encode("cp437", errors="strict"))   This generates the UnicodeEncodeError
 
 
 languages = open("languages.txt", encoding="utf-8")
 
-main(languages, "utf-8","strict")
+main(languages, encoding, error)
