@@ -2,13 +2,13 @@ import sys
 import ex25
 
 print("How old are you?", end=' ')
-#age = input()
+age = input()
 print("How tall are you?", end=' ')
-#height = input()
+height = input()
 print("How much do you weigh?", end=' ')
-#weight = input()
+weight = input()
 
-#print(f"So, you're {age} old, {height} tall and {weight} heavy.")
+print(f"So, you're {age} old, {height} tall and {weight} heavy.")
 
 script, filename = sys.argv
 
@@ -93,9 +93,9 @@ dogs += 5
 if people >= dogs:
     print("People are greater than or equal to dogs.")
 
-elif people <= dogs:
+if people <= dogs:
     print("People are less than or equal to dogs.")
 
 
-elif people == dogs:
+if people == dogs:
     print("People are dogs.")
