@@ -1,7 +1,7 @@
 1. True and True
         True
 2. False and True
-        True
+        False
 3. 1 == 1 and 2 == 1
         False
 4. "test" == "test"
@@ -23,7 +23,7 @@
 12. "test" == 1
         False
 13. not (True and False)
-        False
+        True
 14. not (1 == 1 and 0 != 1)
         False
 15. not (10 == 1 or 1000 == 1000)
@@ -37,4 +37,4 @@
 19. "chunky" == "bacon" and (not (3 == 4 or 3 == 3))
         False
 20. 3 == 3 and (not ("testing" == "testing" or "Python" == "Fun"))
-        True
+        False
