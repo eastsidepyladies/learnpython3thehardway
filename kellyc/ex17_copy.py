@@ -1,5 +1,5 @@
 from sys import argv
-# the exist command checks to see if a file exists, returning True or False
+# the eex17_xist command checks to see if a file exists, returning True or False
 from os.path import exists
 
 script, from_file, to_file = argv
