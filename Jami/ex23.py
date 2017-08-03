@@ -1,6 +1,13 @@
 import sys
 script, encoding, error = sys.argv
 
+#To get git Bash to display utf-8 characters type in:
+# $ export PYTHONIOENCODING=utf-8
+
+#To test what encoding is being used type in:
+# # Gitbash     $ python -c "import sys;print(sys.stdout.encoding)"
+# #Powershell >>> chcp
+
 
 def main(language_file, encoding, errors):
     line = language_file.readline()
