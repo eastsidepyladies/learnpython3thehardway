@@ -4,9 +4,9 @@ from sys import exit
 def kale_sitch():
     print("There's only one bunch of kale left and someone else grabs it! What do you do?")
     print("Here are your options: ")
-    print("a : Say something about the weather and take some baby spinach instead.")
+    print("a: Say something about the weather and take some baby spinach instead.")
     print("b: You remember this is a game and take the kale from them forcefully.")
-    print("c : Decide you want the red-leaf lettuce after all.")
+    print("c: Decide you want the red-leaf lettuce after all.")
     sitch_over = False
 
     while True:
@@ -25,9 +25,9 @@ def kale_sitch():
 def freezer_aisle():
     print("You've got a craving for a Klondike bar, so you head to the frozen section.")
     print("In the way is an Abominable Snowman. What do you do?")
-    print("a : Laugh at it and say 'I'm not real, this is just your dream.'")
+    print("a: Laugh at it and say 'I'm not real, this is just your dream.'")
     print("b: Ask it whether it whether you should go with the crunchy chocolate shelled Klondike bars or stick with the original.")
-    print("c : Tackle the Snowman and tie it up.")
+    print("c: Tackle the Snowman and tie it up.")
     print("Which option will it be? a, b, or c?")
     sitch_over = False
 
@@ -50,7 +50,7 @@ def lost_list():
     print("What do you do?")
     print("a: Drop your basket where you are and leave. You're lost without a list.  ")
     print("b: Resign yourself to the fact that you just have to buy one of everything in the store, so you go back to the front to exchange your basket for a cart. ")
-    print("c : Dump your bag out on the floor and dig around until you find it. ")
+    print("c: Dump your bag out on the floor and dig around until you find it. ")
     sitch_over = False
 
     while True:
@@ -81,31 +81,21 @@ def anything_else():
         elif choice4 == "detergent":
             womp_womp("You head to the cleaning products aisle, narrowly escaping being crushed under a collapsing shelf. The rest of your shopping goes with incident. ")
         elif choice4 == "cereal":
-            checkout("When you get to the cereal aisle, you are astonished to find all of the characters on the box have come to life. They turn out to be very nice and they find you to be very pleasant, as humans go. A lunch date is made and everyone goes about their business. ")
+            womp_womp("When you get to the cereal aisle, you are astonished to find all of the characters on the box have come to life. They turn out to be very nice and they find you to be very pleasant, as humans go. A lunch date is made and everyone goes about their business. ")
         else:
             womp_womp("That item... may not be sold here? You ask an attendant and they confirm this. Well, at least you got most of the stuff on your list.")
-
-# Define checkout
-def checkout(why):
-    print(why, "This has been a more fun day than expected. Maybe tomorrow I'll go to the hardware store. You head to the checkout. ")
-    if reusable_bags == "yes":
-        womp_womp("Yep, that's a good idea.")
-    elif reusable_bags == "no":
-        womp_womp("There's no one else in line! You feel a little guilty about forgetting your reusable bags.")
-
 
 # Define the start
 def start():
     print("You've decided you need to do some grocery shopping, so you head to the store.")
     print("Did you remember to bring your reusable grocery bags?")
-
+    global reusable_bags
     reusable_bags =  input(">> ")
 
     print("You head to the produce deptartment because you want to make a salad. What sort of greens do you want, kale or red-leaf lettuce?")
     sitch_over = False
 
     while True:
-        choice4 = input(">> ")
         greens = input(">> ")
 
         if greens == "kale":
@@ -117,8 +107,11 @@ def start():
             exit(0)
 
 def womp_womp(why):
-    print(why, "You head to the cashier and checkout. Eventfully, you're handed a coupon for your favorite yogurt with the receipt. ")
-    exit(0)
+    if reusable_bags == "yes":
+        print(why, "You head to the cashier and checkout. Eventfully, you're handed a coupon for your favorite yogurt with the receipt. ")
+    else:
+        print(why, "You feel a little guilty about forgetting your reusable bags.")
+        exit(0)
 
 start()
 
