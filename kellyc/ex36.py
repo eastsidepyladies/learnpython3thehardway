@@ -4,14 +4,18 @@ from sys import exit
 
 # Define kale situation
 def kale_sitch():
+    print()
     print("There's only one bunch of kale left and someone else grabs it! What do you do?")
+    print()
     print("Here are your options: ")
+    print()
     print("a: Say something about the weather and take some baby spinach instead.")
     print("b: You remember this is a game and take the kale from them forcefully.")
     print("c: Decide you want the red-leaf lettuce after all.")
     sitch_over = False
 
     while True:
+        print()
         print("Which option will it be? a, b, or c?")
         choice1 = input(">> ")
 
@@ -25,12 +29,17 @@ def kale_sitch():
 
 # Define freezer aisle sitch
 def freezer_aisle():
+    print()
     print("You've got a craving for a Klondike bar, so you head to the frozen section.")
+    print()
     print("In the way is an Abominable Snowman. What do you do?")
+    print()
     print("a: Laugh at it and say 'I'm not real, this is just your dream.'")
     print("b: Ask it whether it whether you should go with the crunchy chocolate shelled Klondike bars or stick with the original.")
     print("c: Tackle the Snowman and tie it up.")
+    print()
     print("Which option will it be? a, b, or c?")
+    print()
     sitch_over = False
 
     while True:
@@ -48,11 +57,15 @@ def freezer_aisle():
 
 # Define lost list area
 def lost_list():
+    print()
     print("What a weird day you are having! There was something else on your list, but now you can't find it. It was just in your hand... ")
+    print()
     print("What do you do?")
+    print()
     print("a: Drop your basket where you are and leave. You're lost without a list.  ")
     print("b: Resign yourself to the fact that you just have to buy one of everything in the store, so you go back to the front to exchange your basket for a cart. ")
     print("c: Dump your bag out on the floor and dig around until you find it. ")
+    print()
     sitch_over = False
 
     while True:
@@ -71,7 +84,9 @@ def lost_list():
 
 # Define anything else
 def anything_else():
+    print()
     print("What else is on your list?")
+    print()
     print("Is it ground beef, detergent, or cereal?")
     sitch_over = False
 
@@ -79,9 +94,9 @@ def anything_else():
         choice4 = input(">> ")
 
         if choice4 == "ground beef":
-            womp_womp("You head to the meat counter, narrowly escaping being crushed under a collapsing shelf. The rest of your shopping goes with incident. ")
+            womp_womp("You head to the meat counter, narrowly escaping being crushed under a collapsing shelf. The rest of your shopping goes without incident. ")
         elif choice4 == "detergent":
-            womp_womp("You head to the cleaning products aisle, narrowly escaping being crushed under a collapsing shelf. The rest of your shopping goes with incident. ")
+            womp_womp("You head to the cleaning products aisle, narrowly escaping being crushed under a collapsing shelf. The rest of your shopping goes without incident. ")
         elif choice4 == "cereal":
             womp_womp("When you get to the cereal aisle, you are astonished to find all of the characters on the box have come to life. They turn out to be very nice and they find you to be very pleasant, as humans go. A lunch date is made and everyone goes about their business. ")
         else:
@@ -111,6 +126,7 @@ def start():
 def womp_womp(why):
     if reusable_bags == "yes":
         print(why, "You head to the cashier and checkout. Eventfully, you're handed a coupon for your favorite yogurt with the receipt. ")
+        exit(0)
     else:
         print(why, "You feel a little guilty about forgetting your reusable bags.")
         exit(0)
