@@ -6,6 +6,10 @@ lexicon = {
 	"go": 'verb',
 	"kill": 'verb',
 	"eat": 'verb',
+	"the": 'stop',
+	"in": 'stop',
+	"of": 'stop',
+	
 }
 	
 def scan(sentence):
