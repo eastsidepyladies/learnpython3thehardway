@@ -90,6 +90,7 @@ print("I need to buy", quantities['green apple'], "green apples.")
 print("I need to buy", quantities['cod'], "pieces of cod.")
 
 print('~*~' * 10)
+# assigns item to key and dept to value
 for item, dept in list(items1.items()):
     print(f"You can find {item} from the {dept} department.")
 
