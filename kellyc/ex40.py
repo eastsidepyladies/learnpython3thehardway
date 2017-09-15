@@ -1,5 +1,7 @@
 import ex40_mystuff
 
+ex40_mystuff.apple()
+
 class Song(object):
 
     #  __init__ is the constructor for a class
@@ -16,16 +18,20 @@ class Song(object):
 # list-o-strings
 wish = Song(["I wish I was a little bit taller",
                             "I wish I was a baller",
-                            "I wish I had a squirrel, trained good, I would call her"])
+                            "I wish I had a girl, if I did, I would call her"])
 
 # list-o-strings
 miner =  Song(['Face worker, a serpentine miner',
                         'A roof falls, an underliner',
                         'Of leaf structure, the egg timer'])
 
-# lyrics are in a variable contained in imported module
-up = Song(ex40_mystuff.creek)
+
+# test is a dict (only the key is used)
+test = Song(ex40_mystuff.testing)
+# testy is a list
+testy = Song(ex40_mystuff.testingy)
 
 wish.sing_me_a_song()
 miner.sing_me_a_song()
-up.sing_me_a_song()
+test.sing_me_a_song()
+testy.sing_me_a_song()

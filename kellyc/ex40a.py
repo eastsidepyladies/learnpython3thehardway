@@ -1,6 +1,8 @@
 import ex40_mystuff
 
+# creates a dictionary item and assigns to mystuff
 mystuff = {'apple' : "I am merely apple."}
+# prints dictionary item above
 print(mystuff['apple'])
 
 # prints from mystuff
@@ -11,7 +13,6 @@ print(ex40_mystuff.tangerine)
 
 # Doesn't work?
 # ex40_mystuff['apple']
-
 
 print(ex40_mystuff.testing['test1'])
 print(ex40_mystuff.testing)
